@@ -1,0 +1,17 @@
+services:
+  backend:
+    build:
+      context: .
+    container_name: orm_backend
+    environment:
+      - MODE=api  # Set to "api" to run the FastAPI app
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    networks:
+      - shared_network
+      
+networks:
+  shared_network:
+    external: true
