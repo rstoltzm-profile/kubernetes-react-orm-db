@@ -1,3 +1,5 @@
-# Help me map out a basic Kubernetes project structure
 # Kubernetes Project Structure
 
+Here is a diagram of the project structure:
+
+![Diagram](./diagram.png)
